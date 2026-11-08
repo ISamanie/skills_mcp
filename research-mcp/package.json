@@ -1,0 +1,31 @@
+{
+  "name": "research-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local semantic search and append-only Markdown research summaries over MCP",
+  "engines": { "node": ">=24" },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.check.json",
+    "start": "node dist/index.js",
+    "prepare-model": "node dist/prepare-model.js",
+    "test": "pnpm run build && tsc -p tsconfig.tests.json && node --test .test-build/tests/*.test.js",
+    "test:integration": "pnpm run build && tsc -p tsconfig.tests.json && node --test .test-build/integration/*.test.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "@modelcontextprotocol/server": "2.4.0",
+    "better-sqlite3": "13.0.3",
+    "sqlite-vec": "0.1.9",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "24.19.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

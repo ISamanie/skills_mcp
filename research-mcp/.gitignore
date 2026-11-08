@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.dependency-cache/
+.temp/
+.test-data/
+.test-build/
+data/
+models/

@@ -1,0 +1,11 @@
+# Machine-specific launch example. Merge this table into the existing user config.
+[mcp_servers.research_mcp]
+command = 'C:\Users\iansa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe'
+args = ['D:\Desktop\CMU-COURSES - Copy\11_15113\hw8_v2\research-mcp\dist\index.js']
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+
+[mcp_servers.research_mcp.env]
+RESEARCH_DOCS_ROOT = 'D:\Desktop\CMU-COURSES - Copy\11_15113\hw8_v2'
+RESEARCH_DB_PATH = 'D:\Desktop\CMU-COURSES - Copy\11_15113\hw8_v2\research-mcp\data\summaries.sqlite'
+RESEARCH_MODEL_CACHE = 'D:\Desktop\CMU-COURSES - Copy\11_15113\hw8_v2\research-mcp\models'

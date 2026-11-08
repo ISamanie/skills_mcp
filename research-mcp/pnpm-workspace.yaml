@@ -1,0 +1,8 @@
+storeDir: .dependency-cache/store
+cacheDir: .dependency-cache/pnpm
+allowBuilds:
+  better-sqlite3: false
+  esbuild: true
+  onnxruntime-node: true
+  sharp: true
+  protobufjs: false
